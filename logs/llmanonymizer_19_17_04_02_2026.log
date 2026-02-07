@@ -2,3 +2,83 @@
 2026-02-04 19:17:42,371 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5001
 2026-02-04 19:17:42,372 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-04 19:17:52,004 - INFO - 127.0.0.1 - - [04/Feb/2026 19:17:52] "GET / HTTP/1.1" 200 -
+2026-02-04 19:17:52,267 - INFO - 127.0.0.1 - - [04/Feb/2026 19:17:52] "GET /socket.io/?EIO=4&transport=polling&t=PmewD13 HTTP/1.1" 200 -
+2026-02-04 19:17:52,288 - INFO - 127.0.0.1 - - [04/Feb/2026 19:17:52] "POST /socket.io/?EIO=4&transport=polling&t=PmewD1O&sid=Rdw2OGLxp8G2spJZAAAA HTTP/1.1" 200 -
+2026-02-04 19:17:52,605 - INFO - 127.0.0.1 - - [04/Feb/2026 19:17:52] "GET /socket.io/?EIO=4&transport=polling&t=PmewD1T&sid=Rdw2OGLxp8G2spJZAAAA HTTP/1.1" 200 -
+2026-02-04 19:17:52,758 - INFO - 127.0.0.1 - - [04/Feb/2026 19:17:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-04 19:18:37,524 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:37] "GET /socket.io/?EIO=4&transport=websocket&sid=Rdw2OGLxp8G2spJZAAAA HTTP/1.1" 200 -
+2026-02-04 19:18:37,562 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:37] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-02-04 19:18:37,642 - DEBUG - Page break on page 1 at y=274 for element of height 6 > 277
+2026-02-04 19:18:37,645 - DEBUG - Final size summary of the biggest document sections:
+2026-02-04 19:18:37,645 - DEBUG - - pages: 1.6KiB
+2026-02-04 19:18:37,646 - DEBUG - - fonts: 97.0B
+2026-02-04 19:18:37,844 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:37] "GET / HTTP/1.1" 200 -
+2026-02-04 19:18:38,320 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:38] "GET /socket.io/?EIO=4&transport=polling&t=PmewOA4 HTTP/1.1" 200 -
+2026-02-04 19:18:38,526 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:38] "POST /socket.io/?EIO=4&transport=polling&t=PmewOIn&sid=vIRsbGAVsbAd5z_YAAAC HTTP/1.1" 200 -
+2026-02-04 19:18:38,774 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:38] "GET /socket.io/?EIO=4&transport=polling&t=PmewOIp&sid=vIRsbGAVsbAd5z_YAAAC HTTP/1.1" 200 -
+2026-02-04 19:18:38,791 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:38] "GET /socket.io/?EIO=4&transport=polling&t=PmewON_&sid=vIRsbGAVsbAd5z_YAAAC HTTP/1.1" 200 -
+2026-02-04 19:18:53,562 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:53] "GET /socket.io/?EIO=4&transport=websocket&sid=vIRsbGAVsbAd5z_YAAAC HTTP/1.1" 200 -
+2026-02-04 19:18:53,765 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:53] "GET /download?job=14000-202602041918-LUsPigetL1A HTTP/1.1" 200 -
+2026-02-04 19:18:59,690 - INFO - 127.0.0.1 - - [04/Feb/2026 19:18:59] "GET /llm HTTP/1.1" 200 -
+2026-02-04 19:19:45,638 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:45] "[32mPOST /llm HTTP/1.1[0m" 302 -
+2026-02-04 19:19:45,884 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:45] "GET /llm_results HTTP/1.1" 200 -
+2026-02-04 19:19:46,252 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:46] "GET /socket.io/?EIO=4&transport=polling&t=PmewenG HTTP/1.1" 200 -
+2026-02-04 19:19:46,507 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:46] "POST /socket.io/?EIO=4&transport=polling&t=PmewesJ&sid=cPT5mixs2Y1jYBPAAAAE HTTP/1.1" 200 -
+2026-02-04 19:19:46,571 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:46] "GET /socket.io/?EIO=4&transport=polling&t=PmewesM&sid=cPT5mixs2Y1jYBPAAAAE HTTP/1.1" 200 -
+2026-02-04 19:19:46,588 - INFO - 127.0.0.1 - - [04/Feb/2026 19:19:46] "GET /socket.io/?EIO=4&transport=polling&t=PmewexN&sid=cPT5mixs2Y1jYBPAAAAE HTTP/1.1" 200 -
+2026-02-04 19:19:50,866 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:19:52,923 - DEBUG - http://localhost:2929 "GET /health HTTP/1.1" 200 15
+2026-02-04 19:19:52,932 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:19:54,982 - DEBUG - http://localhost:2929 "POST /tokenize HTTP/1.1" 200 3144
+2026-02-04 19:19:54,985 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:20:05,758 - DEBUG - http://localhost:2929 "POST /completion HTTP/1.1" 200 6448
+2026-02-04 19:20:16,800 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:16] "GET /llm_download?job=TinyLlama-1.1B_202602041919_wFcfxFqgjjE HTTP/1.1" 200 -
+2026-02-04 19:20:21,309 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:21] "GET /reportredaction HTTP/1.1" 200 -
+2026-02-04 19:20:21,329 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:21] "GET /socket.io/?EIO=4&transport=websocket&sid=cPT5mixs2Y1jYBPAAAAE HTTP/1.1" 200 -
+2026-02-04 19:20:21,356 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:21] "GET /socket.io/?EIO=4&transport=polling&t=PmewnQT HTTP/1.1" 200 -
+2026-02-04 19:20:21,710 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:21] "POST /socket.io/?EIO=4&transport=polling&t=PmewnRF&sid=lK8qtO8SlsbUqaT2AAAG HTTP/1.1" 200 -
+2026-02-04 19:20:21,710 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:21] "GET /socket.io/?EIO=4&transport=polling&t=PmewnRG&sid=lK8qtO8SlsbUqaT2AAAG HTTP/1.1" 200 -
+2026-02-04 19:20:40,578 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:40] "GET /socket.io/?EIO=4&transport=websocket&sid=lK8qtO8SlsbUqaT2AAAG HTTP/1.1" 200 -
+2026-02-04 19:20:40,730 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:40] "[32mPOST /reportredaction HTTP/1.1[0m" 302 -
+2026-02-04 19:20:41,500 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:41] "GET /reportredactionviewer/test_medical_report.pdf$52b924e8-1c4e-4553-80af-9c181ef5153a HTTP/1.1" 200 -
+2026-02-04 19:20:41,855 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:41] "GET /socket.io/?EIO=4&transport=polling&t=PmewsLx HTTP/1.1" 200 -
+2026-02-04 19:20:41,886 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:41] "GET /reportredactionfileredacted/test_medical_report.pdf$52b924e8-1c4e-4553-80af-9c181ef5153a HTTP/1.1" 200 -
+2026-02-04 19:20:42,104 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:42] "POST /socket.io/?EIO=4&transport=polling&t=PmewsR4&sid=MAi38mv3uhYhvPhFAAAI HTTP/1.1" 200 -
+2026-02-04 19:20:42,175 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:42] "GET /socket.io/?EIO=4&transport=polling&t=PmewsR6&sid=MAi38mv3uhYhvPhFAAAI HTTP/1.1" 200 -
+2026-02-04 19:20:42,187 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:42] "GET /socket.io/?EIO=4&transport=polling&t=PmewsW3&sid=MAi38mv3uhYhvPhFAAAI HTTP/1.1" 200 -
+2026-02-04 19:20:57,731 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:57] "GET /llm_results HTTP/1.1" 200 -
+2026-02-04 19:20:57,747 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:57] "GET /socket.io/?EIO=4&transport=websocket&sid=MAi38mv3uhYhvPhFAAAI HTTP/1.1" 200 -
+2026-02-04 19:20:57,974 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:57] "GET /socket.io/?EIO=4&transport=polling&t=PmewwJT HTTP/1.1" 200 -
+2026-02-04 19:20:58,004 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:58] "POST /socket.io/?EIO=4&transport=polling&t=PmewwN2&sid=ouWZR0vdPpivwZLqAAAK HTTP/1.1" 200 -
+2026-02-04 19:20:58,337 - INFO - 127.0.0.1 - - [04/Feb/2026 19:20:58] "GET /socket.io/?EIO=4&transport=polling&t=PmewwN4&sid=ouWZR0vdPpivwZLqAAAK HTTP/1.1" 200 -
+2026-02-04 19:21:00,847 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:00] "GET /llm HTTP/1.1" 200 -
+2026-02-04 19:21:00,868 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:00] "GET /socket.io/?EIO=4&transport=websocket&sid=ouWZR0vdPpivwZLqAAAK HTTP/1.1" 200 -
+2026-02-04 19:21:40,551 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:40] "[32mPOST /llm HTTP/1.1[0m" 302 -
+2026-02-04 19:21:40,558 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:21:40,570 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:40] "GET /llm_results HTTP/1.1" 200 -
+2026-02-04 19:21:40,917 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:40] "GET /socket.io/?EIO=4&transport=polling&t=Pmex4mq HTTP/1.1" 200 -
+2026-02-04 19:21:41,174 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:41] "POST /socket.io/?EIO=4&transport=polling&t=Pmex4rt&sid=YT-PZTRI2EJDcdsQAAAM HTTP/1.1" 200 -
+2026-02-04 19:21:41,236 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:41] "GET /socket.io/?EIO=4&transport=polling&t=Pmex4rw&sid=YT-PZTRI2EJDcdsQAAAM HTTP/1.1" 200 -
+2026-02-04 19:21:41,244 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:41] "GET /socket.io/?EIO=4&transport=polling&t=Pmex4wv&sid=YT-PZTRI2EJDcdsQAAAM HTTP/1.1" 200 -
+2026-02-04 19:21:42,613 - DEBUG - http://localhost:2929 "GET /health HTTP/1.1" 200 15
+2026-02-04 19:21:42,617 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:21:44,654 - DEBUG - http://localhost:2929 "POST /tokenize HTTP/1.1" 200 3577
+2026-02-04 19:21:44,657 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-02-04 19:21:55,865 - DEBUG - http://localhost:2929 "POST /completion HTTP/1.1" 200 6643
+2026-02-04 19:21:58,581 - INFO - 127.0.0.1 - - [04/Feb/2026 19:21:58] "GET /llm_download?job=TinyLlama-1.1B_202602041921_G5VwSNE5Qew HTTP/1.1" 200 -
+2026-02-04 19:22:03,669 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:03] "GET /reportredaction HTTP/1.1" 200 -
+2026-02-04 19:22:03,683 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:03] "GET /socket.io/?EIO=4&transport=websocket&sid=YT-PZTRI2EJDcdsQAAAM HTTP/1.1" 200 -
+2026-02-04 19:22:03,702 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:03] "GET /socket.io/?EIO=4&transport=polling&t=PmexAPn HTTP/1.1" 200 -
+2026-02-04 19:22:04,040 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:04] "POST /socket.io/?EIO=4&transport=polling&t=PmexAP-&sid=pwk7j6Twu9y6o7JGAAAO HTTP/1.1" 200 -
+2026-02-04 19:22:04,049 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:04] "GET /socket.io/?EIO=4&transport=polling&t=PmexAQ0&sid=pwk7j6Twu9y6o7JGAAAO HTTP/1.1" 200 -
+2026-02-04 19:22:11,397 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:11] "GET /socket.io/?EIO=4&transport=websocket&sid=pwk7j6Twu9y6o7JGAAAO HTTP/1.1" 200 -
+2026-02-04 19:22:11,555 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:11] "[32mPOST /reportredaction HTTP/1.1[0m" 302 -
+2026-02-04 19:22:12,013 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "GET /reportredactionviewer/test_medical_report.pdf$52b924e8-1c4e-4553-80af-9c181ef5153a HTTP/1.1" 200 -
+2026-02-04 19:22:12,391 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "GET /socket.io/?EIO=4&transport=polling&t=PmexCS7 HTTP/1.1" 200 -
+2026-02-04 19:22:12,414 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "GET /reportredactionfileredacted/test_medical_report.pdf$52b924e8-1c4e-4553-80af-9c181ef5153a HTTP/1.1" 200 -
+2026-02-04 19:22:12,645 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "POST /socket.io/?EIO=4&transport=polling&t=PmexCXi&sid=Jt0LQ5Md2GEItiajAAAQ HTTP/1.1" 200 -
+2026-02-04 19:22:12,713 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "GET /socket.io/?EIO=4&transport=polling&t=PmexCXk&sid=Jt0LQ5Md2GEItiajAAAQ HTTP/1.1" 200 -
+2026-02-04 19:22:12,722 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:12] "GET /socket.io/?EIO=4&transport=polling&t=PmexCci&sid=Jt0LQ5Md2GEItiajAAAQ HTTP/1.1" 200 -
+2026-02-04 19:22:27,467 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:27] "GET /privacy-dashboard HTTP/1.1" 200 -
+2026-02-04 19:22:27,491 - INFO - 127.0.0.1 - - [04/Feb/2026 19:22:27] "GET /socket.io/?EIO=4&transport=websocket&sid=Jt0LQ5Md2GEItiajAAAQ HTTP/1.1" 200 -
