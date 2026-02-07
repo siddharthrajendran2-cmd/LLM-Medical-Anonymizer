@@ -1,0 +1,30 @@
+2025-12-28 19:07:43,087 - DEBUG - Start LLM Anonymizer
+2025-12-28 19:07:43,101 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-12-28 19:07:43,101 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-28 19:07:49,638 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:49] "GET / HTTP/1.1" 200 -
+2025-12-28 19:07:49,892 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:49] "GET /socket.io/?EIO=4&transport=polling&t=PjbBVQL HTTP/1.1" 200 -
+2025-12-28 19:07:50,213 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:50] "POST /socket.io/?EIO=4&transport=polling&t=PjbBVT8&sid=6qXXH4I4yTXaLSy7AAAA HTTP/1.1" 200 -
+2025-12-28 19:07:50,215 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:50] "GET /socket.io/?EIO=4&transport=polling&t=PjbBVTB&sid=6qXXH4I4yTXaLSy7AAAA HTTP/1.1" 200 -
+2025-12-28 19:07:51,993 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:51] "GET /socket.io/?EIO=4&transport=websocket&sid=6qXXH4I4yTXaLSy7AAAA HTTP/1.1" 200 -
+2025-12-28 19:07:52,002 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 90, in __init__
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+2025-12-28 19:07:52,017 - INFO - 127.0.0.1 - - [28/Dec/2025 19:07:52] "[35m[1mGET /llm HTTP/1.1[0m" 500 -

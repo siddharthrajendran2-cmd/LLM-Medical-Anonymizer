@@ -1,0 +1,30 @@
+2025-12-29 22:01:20,905 - DEBUG - Start LLM Anonymizer
+2025-12-29 22:01:20,931 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-12-29 22:01:20,931 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 22:01:25,454 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:25] "GET /socket.io/?EIO=4&transport=polling&t=Pjgyp_G HTTP/1.1" 200 -
+2025-12-29 22:01:25,721 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:25] "POST /socket.io/?EIO=4&transport=polling&t=Pjgyq4K&sid=vrf84tyjcMPYKflEAAAA HTTP/1.1" 200 -
+2025-12-29 22:01:25,783 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:25] "GET /socket.io/?EIO=4&transport=polling&t=Pjgyq4N&sid=vrf84tyjcMPYKflEAAAA HTTP/1.1" 200 -
+2025-12-29 22:01:25,792 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:25] "GET /socket.io/?EIO=4&transport=polling&t=Pjgyq9T&sid=vrf84tyjcMPYKflEAAAA HTTP/1.1" 200 -
+2025-12-29 22:01:26,385 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:26] "GET /socket.io/?EIO=4&transport=websocket&sid=vrf84tyjcMPYKflEAAAA HTTP/1.1" 200 -
+2025-12-29 22:01:43,240 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:43] "GET / HTTP/1.1" 200 -
+2025-12-29 22:01:43,343 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:43] "GET /socket.io/?EIO=4&transport=polling&t=PjgyuRh HTTP/1.1" 200 -
+2025-12-29 22:01:43,434 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:43] "POST /socket.io/?EIO=4&transport=polling&t=PjgyuRw&sid=VPGGIIIrbRNST70dAAAC HTTP/1.1" 200 -
+2025-12-29 22:01:43,668 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:43] "GET /socket.io/?EIO=4&transport=polling&t=PjgyuRy&sid=VPGGIIIrbRNST70dAAAC HTTP/1.1" 200 -
+2025-12-29 22:01:45,574 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:45] "GET /socket.io/?EIO=4&transport=websocket&sid=VPGGIIIrbRNST70dAAAC HTTP/1.1" 200 -
+2025-12-29 22:01:45,762 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:45] "GET /llm HTTP/1.1" 200 -
+2025-12-29 22:01:54,825 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:54] "[32mPOST /llm HTTP/1.1[0m" 302 -
+2025-12-29 22:01:54,859 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:54] "GET /llm_results HTTP/1.1" 200 -
+2025-12-29 22:01:55,209 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:55] "GET /socket.io/?EIO=4&transport=polling&t=PjgyxGH HTTP/1.1" 200 -
+2025-12-29 22:01:55,483 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:55] "POST /socket.io/?EIO=4&transport=polling&t=PjgyxLB&sid=yYsLvVnGyp5X-dRTAAAE HTTP/1.1" 200 -
+2025-12-29 22:01:55,537 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:55] "GET /socket.io/?EIO=4&transport=polling&t=PjgyxLC&sid=yYsLvVnGyp5X-dRTAAAE HTTP/1.1" 200 -
+2025-12-29 22:01:55,569 - INFO - 127.0.0.1 - - [29/Dec/2025 22:01:55] "GET /socket.io/?EIO=4&transport=polling&t=PjgyxQR&sid=yYsLvVnGyp5X-dRTAAAE HTTP/1.1" 200 -
+2025-12-29 22:01:59,859 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:08,945 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:18,018 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:27,065 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:36,135 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:45,220 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:02:54,283 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:03:03,355 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2025-12-29 22:03:12,432 - DEBUG - Starting new HTTP connection (1): localhost:2929

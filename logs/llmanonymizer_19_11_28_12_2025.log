@@ -1,0 +1,30 @@
+2025-12-28 19:11:11,281 - DEBUG - Start LLM Anonymizer
+2025-12-28 19:11:11,299 - WARNING -  * Debugger is active!
+2025-12-28 19:11:11,306 - INFO -  * Debugger PIN: 120-759-068
+2025-12-28 19:11:12,248 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:12] "GET / HTTP/1.1" 200 -
+2025-12-28 19:11:12,328 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbCGu1 HTTP/1.1" 200 -
+2025-12-28 19:11:12,453 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:12] "POST /socket.io/?EIO=4&transport=polling&t=PjbCGuB&sid=8RnPYlO05fWGsN5eAAAA HTTP/1.1" 200 -
+2025-12-28 19:11:12,653 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbCGuD&sid=8RnPYlO05fWGsN5eAAAA HTTP/1.1" 200 -
+2025-12-28 19:11:12,971 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbCGzG&sid=8RnPYlO05fWGsN5eAAAA HTTP/1.1" 200 -
+2025-12-28 19:11:13,767 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:13] "GET /socket.io/?EIO=4&transport=websocket&sid=8RnPYlO05fWGsN5eAAAA HTTP/1.1" 200 -
+2025-12-28 19:11:14,031 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:14] "GET /llm HTTP/1.1" 200 -
+2025-12-28 19:11:17,003 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:17] "GET /llm_results HTTP/1.1" 200 -
+2025-12-28 19:11:17,295 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PjbCI1y HTTP/1.1" 200 -
+2025-12-28 19:11:17,609 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:17] "POST /socket.io/?EIO=4&transport=polling&t=PjbCI5p&sid=EWUXkOFD7r0ESGy8AAAC HTTP/1.1" 200 -
+2025-12-28 19:11:17,615 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:17] "GET /socket.io/?EIO=4&transport=polling&t=PjbCI5s&sid=EWUXkOFD7r0ESGy8AAAC HTTP/1.1" 200 -
+2025-12-28 19:11:18,643 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:18] "GET /reportredaction HTTP/1.1" 200 -
+2025-12-28 19:11:18,694 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:18] "GET /socket.io/?EIO=4&transport=websocket&sid=EWUXkOFD7r0ESGy8AAAC HTTP/1.1" 200 -
+2025-12-28 19:11:18,906 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:18] "GET /socket.io/?EIO=4&transport=polling&t=PjbCIR9 HTTP/1.1" 200 -
+2025-12-28 19:11:19,235 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:19] "POST /socket.io/?EIO=4&transport=polling&t=PjbCIV0&sid=IFeOwRn47N9E_jQLAAAE HTTP/1.1" 200 -
+2025-12-28 19:11:19,239 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:19] "GET /socket.io/?EIO=4&transport=polling&t=PjbCIV2&sid=IFeOwRn47N9E_jQLAAAE HTTP/1.1" 200 -
+2025-12-28 19:11:20,100 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:20] "GET /socket.io/?EIO=4&transport=websocket&sid=IFeOwRn47N9E_jQLAAAE HTTP/1.1" 200 -
+2025-12-28 19:11:20,111 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:20] "GET /llm HTTP/1.1" 200 -
+2025-12-28 19:11:21,287 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:21] "GET / HTTP/1.1" 200 -
+2025-12-28 19:11:21,598 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:21] "GET /socket.io/?EIO=4&transport=polling&t=PjbCJ4K HTTP/1.1" 200 -
+2025-12-28 19:11:21,917 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:21] "POST /socket.io/?EIO=4&transport=polling&t=PjbCJ92&sid=_H2Xyhonizdq-KaGAAAG HTTP/1.1" 200 -
+2025-12-28 19:11:21,919 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:21] "GET /socket.io/?EIO=4&transport=polling&t=PjbCJ95&sid=_H2Xyhonizdq-KaGAAAG HTTP/1.1" 200 -
+2025-12-28 19:11:22,190 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:22] "GET /socket.io/?EIO=4&transport=websocket&sid=_H2Xyhonizdq-KaGAAAG HTTP/1.1" 200 -
+2025-12-28 19:11:22,194 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:22] "GET / HTTP/1.1" 200 -
+2025-12-28 19:11:22,498 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:22] "GET /socket.io/?EIO=4&transport=polling&t=PjbCJIc HTTP/1.1" 200 -
+2025-12-28 19:11:22,818 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:22] "POST /socket.io/?EIO=4&transport=polling&t=PjbCJN5&sid=v7CBZR1VeMZoJ0stAAAI HTTP/1.1" 200 -
+2025-12-28 19:11:22,821 - INFO - 127.0.0.1 - - [28/Dec/2025 19:11:22] "GET /socket.io/?EIO=4&transport=polling&t=PjbCJN6&sid=v7CBZR1VeMZoJ0stAAAI HTTP/1.1" 200 -

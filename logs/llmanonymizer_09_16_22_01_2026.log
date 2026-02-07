@@ -1,0 +1,25 @@
+2026-01-22 09:16:57,941 - DEBUG - Start LLM Anonymizer
+2026-01-22 09:16:57,961 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-01-22 09:16:57,962 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-22 09:17:04,950 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:04] "GET /llm HTTP/1.1" 200 -
+2026-01-22 09:17:07,049 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:07] "GET / HTTP/1.1" 200 -
+2026-01-22 09:17:07,096 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:07] "GET /socket.io/?EIO=4&transport=polling&t=PlZq2BG HTTP/1.1" 200 -
+2026-01-22 09:17:07,423 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:07] "POST /socket.io/?EIO=4&transport=polling&t=PlZq2BV&sid=5KGycNTMqIeHPWEqAAAA HTTP/1.1" 200 -
+2026-01-22 09:17:07,433 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:07] "GET /socket.io/?EIO=4&transport=polling&t=PlZq2BW&sid=5KGycNTMqIeHPWEqAAAA HTTP/1.1" 200 -
+2026-01-22 09:17:11,987 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:11] "GET /socket.io/?EIO=4&transport=websocket&sid=5KGycNTMqIeHPWEqAAAA HTTP/1.1" 200 -
+2026-01-22 09:17:12,004 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:12] "GET /llm HTTP/1.1" 200 -
+2026-01-22 09:17:13,361 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:13] "GET /llm_results HTTP/1.1" 200 -
+2026-01-22 09:17:13,589 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:13] "GET /socket.io/?EIO=4&transport=polling&t=PlZq3js HTTP/1.1" 200 -
+2026-01-22 09:17:13,929 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:13] "POST /socket.io/?EIO=4&transport=polling&t=PlZq3mw&sid=9VdLV6_Z2s4SKbELAAAC HTTP/1.1" 200 -
+2026-01-22 09:17:13,930 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:13] "GET /socket.io/?EIO=4&transport=polling&t=PlZq3my&sid=9VdLV6_Z2s4SKbELAAAC HTTP/1.1" 200 -
+2026-01-22 09:17:17,309 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:17] "GET /reportredaction HTTP/1.1" 200 -
+2026-01-22 09:17:17,346 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:17] "GET /socket.io/?EIO=4&transport=websocket&sid=9VdLV6_Z2s4SKbELAAAC HTTP/1.1" 200 -
+2026-01-22 09:17:17,585 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:17] "GET /socket.io/?EIO=4&transport=polling&t=PlZq4hE HTTP/1.1" 200 -
+2026-01-22 09:17:17,904 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:17] "POST /socket.io/?EIO=4&transport=polling&t=PlZq4lM&sid=YHB00BCDlJ6I-NBqAAAE HTTP/1.1" 200 -
+2026-01-22 09:17:17,909 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:17] "GET /socket.io/?EIO=4&transport=polling&t=PlZq4lO&sid=YHB00BCDlJ6I-NBqAAAE HTTP/1.1" 200 -
+2026-01-22 09:17:21,044 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:21] "GET /socket.io/?EIO=4&transport=websocket&sid=YHB00BCDlJ6I-NBqAAAE HTTP/1.1" 200 -
+2026-01-22 09:17:21,052 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:21] "GET / HTTP/1.1" 200 -
+2026-01-22 09:17:21,353 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:21] "GET /socket.io/?EIO=4&transport=polling&t=PlZq5bx HTTP/1.1" 200 -
+2026-01-22 09:17:21,673 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:21] "POST /socket.io/?EIO=4&transport=polling&t=PlZq5gD&sid=MRDO2CtfYea5OGvvAAAG HTTP/1.1" 200 -
+2026-01-22 09:17:21,673 - INFO - 127.0.0.1 - - [22/Jan/2026 09:17:21] "GET /socket.io/?EIO=4&transport=polling&t=PlZq5gF&sid=MRDO2CtfYea5OGvvAAAG HTTP/1.1" 200 -

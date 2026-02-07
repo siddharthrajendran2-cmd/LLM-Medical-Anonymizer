@@ -1,0 +1,19 @@
+2025-12-28 19:08:50,831 - DEBUG - Start LLM Anonymizer
+2025-12-28 19:08:50,839 - WARNING -  * Debugger is active!
+2025-12-28 19:08:50,843 - INFO -  * Debugger PIN: 120-759-068
+2025-12-28 19:09:12,123 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:12] "GET / HTTP/1.1" 200 -
+2025-12-28 19:09:12,160 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbBpYF HTTP/1.1" 200 -
+2025-12-28 19:09:12,306 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:12] "POST /socket.io/?EIO=4&transport=polling&t=PjbBpYi&sid=fBcYZWtDGTychCXWAAAA HTTP/1.1" 200 -
+2025-12-28 19:09:12,491 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbBpYj&sid=fBcYZWtDGTychCXWAAAA HTTP/1.1" 200 -
+2025-12-28 19:09:12,805 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:12] "GET /socket.io/?EIO=4&transport=polling&t=PjbBpdk&sid=fBcYZWtDGTychCXWAAAA HTTP/1.1" 200 -
+2025-12-28 19:09:13,453 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:13] "GET /socket.io/?EIO=4&transport=websocket&sid=fBcYZWtDGTychCXWAAAA HTTP/1.1" 200 -
+2025-12-28 19:09:13,460 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:13] "GET / HTTP/1.1" 200 -
+2025-12-28 19:09:13,777 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:13] "GET /socket.io/?EIO=4&transport=polling&t=PjbBpt3 HTTP/1.1" 200 -
+2025-12-28 19:09:14,112 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:14] "POST /socket.io/?EIO=4&transport=polling&t=PjbBpxs&sid=AIEil3n_zx0S0b-3AAAC HTTP/1.1" 200 -
+2025-12-28 19:09:14,113 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:14] "GET /socket.io/?EIO=4&transport=polling&t=PjbBpxu&sid=AIEil3n_zx0S0b-3AAAC HTTP/1.1" 200 -
+2025-12-28 19:09:16,151 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:16] "GET /socket.io/?EIO=4&transport=websocket&sid=AIEil3n_zx0S0b-3AAAC HTTP/1.1" 200 -
+2025-12-28 19:09:16,194 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:16] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2025-12-28 19:09:16,593 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:16] "GET /llm?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-28 19:09:16,598 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:16] "GET /llm?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-28 19:09:16,969 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:16] "GET /llm?__debugger__=yes&cmd=resource&f=console.png&s=oStQYBxSvUbc9Wna7sID HTTP/1.1" 200 -
+2025-12-28 19:09:17,215 - INFO - 127.0.0.1 - - [28/Dec/2025 19:09:17] "GET /llm?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

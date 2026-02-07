@@ -1,6 +1,0 @@
-.DS_STORE
-*.pyc
-logs*
-*.log
-__pycache__
-venv

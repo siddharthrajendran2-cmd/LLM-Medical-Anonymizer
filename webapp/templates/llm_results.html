@@ -2,37 +2,54 @@
 {% block content %}
 
 <style>
-    .loading-circle {
-        border: 4px solid #f3f3f3;
-        /* Light grey */
-        border-top: 4px solid #3498db;
-        /* Blue */
-        border-radius: 50%;
-        width: 30px;
+    <style>
+    /* Same CSS as above - copy the entire style block from index.html */
+    .container { background: transparent; }
+    .card, .content-card, .upload-area, .form-area {
+        background: white !important;
+        color: #333 !important;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .card *, .content-card *, .upload-area *, .form-area *,
+    p, span, div, label, h1, h2, h3, h4, h5, h6 {
+        color: #333 !important;
+    }
+    input, select, textarea, .form-control, .form-select {
+        background: white !important;
+        color: #333 !important;
+        border: 2px solid #e9ecef !important;
+    }
+    .progress {
+        background: #e9ecef !important;
         height: 30px;
-        animation: spin 2s linear infinite;
-        margin: 20px auto;
+        border-radius: 12px;
+        margin: 15px 0;
     }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
+    .progress-bar {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        font-weight: bold;
+        line-height: 30px;
+        font-size: 14px;
     }
-
-    .hidden {
-        display: none;
+    .job-status, .status-message, .processing-info {
+        background: white !important;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 15px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     }
-
-    .visible {
-        display: block;
+    .alert {
+        color: white !important;
+        font-weight: 600;
+    }
+    .alert * {
+        color: white !important;
     }
 </style>
-
 <div class="content-section">
     <h1>LLM Progress & Results</h1>
 

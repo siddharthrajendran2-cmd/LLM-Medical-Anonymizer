@@ -1,0 +1,89 @@
+2026-01-22 08:58:06,312 - DEBUG - Start LLM Anonymizer
+2026-01-22 08:58:06,343 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-01-22 08:58:06,344 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-22 08:58:12,662 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:12] "GET / HTTP/1.1" 200 -
+2026-01-22 08:58:12,813 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:12] "GET /socket.io/?EIO=4&transport=polling&t=PlZljG6 HTTP/1.1" 200 -
+2026-01-22 08:58:12,878 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:12] "POST /socket.io/?EIO=4&transport=polling&t=PlZljGV&sid=M79gcwvcvteM4mUEAAAA HTTP/1.1" 200 -
+2026-01-22 08:58:13,148 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:13] "GET /socket.io/?EIO=4&transport=polling&t=PlZljGY&sid=M79gcwvcvteM4mUEAAAA HTTP/1.1" 200 -
+2026-01-22 08:58:49,883 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:49] "GET /socket.io/?EIO=4&transport=websocket&sid=M79gcwvcvteM4mUEAAAA HTTP/1.1" 200 -
+2026-01-22 08:58:50,168 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:50] "GET /llm HTTP/1.1" 200 -
+2026-01-22 08:58:51,756 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:51] "GET /llm_results HTTP/1.1" 200 -
+2026-01-22 08:58:51,826 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:51] "GET /socket.io/?EIO=4&transport=polling&t=PlZlsnj HTTP/1.1" 200 -
+2026-01-22 08:58:52,151 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:52] "POST /socket.io/?EIO=4&transport=polling&t=PlZlsnt&sid=ejOU468frUVVsGSXAAAC HTTP/1.1" 200 -
+2026-01-22 08:58:52,158 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:52] "GET /socket.io/?EIO=4&transport=polling&t=PlZlsnw&sid=ejOU468frUVVsGSXAAAC HTTP/1.1" 200 -
+2026-01-22 08:58:53,776 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:53] "GET /reportredaction HTTP/1.1" 200 -
+2026-01-22 08:58:53,786 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:53] "GET /socket.io/?EIO=4&transport=websocket&sid=ejOU468frUVVsGSXAAAC HTTP/1.1" 200 -
+2026-01-22 08:58:53,977 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:53] "GET /socket.io/?EIO=4&transport=polling&t=PlZltGW HTTP/1.1" 200 -
+2026-01-22 08:58:54,304 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:54] "POST /socket.io/?EIO=4&transport=polling&t=PlZltJU&sid=RO6SOiMNC9Z9cFL9AAAE HTTP/1.1" 200 -
+2026-01-22 08:58:54,309 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:54] "GET /socket.io/?EIO=4&transport=polling&t=PlZltJX&sid=RO6SOiMNC9Z9cFL9AAAE HTTP/1.1" 200 -
+2026-01-22 08:58:55,897 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:55] "GET /socket.io/?EIO=4&transport=websocket&sid=RO6SOiMNC9Z9cFL9AAAE HTTP/1.1" 200 -
+2026-01-22 08:58:55,918 - INFO - 127.0.0.1 - - [22/Jan/2026 08:58:55] "GET /privacy-dashboard HTTP/1.1" 200 -
+2026-01-22 08:59:00,063 - INFO - 127.0.0.1 - - [22/Jan/2026 08:59:00] "GET / HTTP/1.1" 200 -
+2026-01-22 08:59:00,375 - INFO - 127.0.0.1 - - [22/Jan/2026 08:59:00] "GET /socket.io/?EIO=4&transport=polling&t=PlZluov HTTP/1.1" 200 -
+2026-01-22 08:59:00,701 - INFO - 127.0.0.1 - - [22/Jan/2026 08:59:00] "POST /socket.io/?EIO=4&transport=polling&t=PlZlutS&sid=XCgUm873ddFqQydpAAAG HTTP/1.1" 200 -
+2026-01-22 08:59:00,703 - INFO - 127.0.0.1 - - [22/Jan/2026 08:59:00] "GET /socket.io/?EIO=4&transport=polling&t=PlZlutU&sid=XCgUm873ddFqQydpAAAG HTTP/1.1" 200 -
+2026-01-22 09:00:38,618 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:38] "GET /socket.io/?EIO=4&transport=websocket&sid=XCgUm873ddFqQydpAAAG HTTP/1.1" 200 -
+2026-01-22 09:00:38,972 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:38] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-01-22 09:00:38,996 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:38] "GET / HTTP/1.1" 200 -
+2026-01-22 09:00:39,019 - DEBUG - Page break on page 1 at y=274 for element of height 6 > 277
+2026-01-22 09:00:39,024 - DEBUG - Final size summary of the biggest document sections:
+2026-01-22 09:00:39,024 - DEBUG - - pages: 1.6KiB
+2026-01-22 09:00:39,025 - DEBUG - - fonts: 97.0B
+2026-01-22 09:00:39,203 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:39] "GET /socket.io/?EIO=4&transport=polling&t=PlZmGyh HTTP/1.1" 200 -
+2026-01-22 09:00:39,527 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:39] "POST /socket.io/?EIO=4&transport=polling&t=PlZmG_e&sid=a2dgl1fczgaOfiGfAAAI HTTP/1.1" 200 -
+2026-01-22 09:00:39,535 - INFO - 127.0.0.1 - - [22/Jan/2026 09:00:39] "GET /socket.io/?EIO=4&transport=polling&t=PlZmG_i&sid=a2dgl1fczgaOfiGfAAAI HTTP/1.1" 200 -
+2026-01-22 09:03:22,431 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:22] "GET /socket.io/?EIO=4&transport=websocket&sid=a2dgl1fczgaOfiGfAAAI HTTP/1.1" 200 -
+2026-01-22 09:03:22,755 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:22] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-01-22 09:03:22,796 - DEBUG - Page break on page 1 at y=274 for element of height 6 > 277
+2026-01-22 09:03:22,797 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:22] "GET / HTTP/1.1" 200 -
+2026-01-22 09:03:22,800 - DEBUG - Final size summary of the biggest document sections:
+2026-01-22 09:03:22,800 - DEBUG - - pages: 1.6KiB
+2026-01-22 09:03:22,801 - DEBUG - - fonts: 97.0B
+2026-01-22 09:03:23,001 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:23] "GET /socket.io/?EIO=4&transport=polling&t=PlZmuy3 HTTP/1.1" 200 -
+2026-01-22 09:03:23,323 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:23] "POST /socket.io/?EIO=4&transport=polling&t=PlZmu-_&sid=ObFqOJVXA5LICfH6AAAK HTTP/1.1" 200 -
+2026-01-22 09:03:23,327 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:23] "GET /socket.io/?EIO=4&transport=polling&t=PlZmu_2&sid=ObFqOJVXA5LICfH6AAAK HTTP/1.1" 200 -
+2026-01-22 09:03:28,726 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:28] "GET /socket.io/?EIO=4&transport=websocket&sid=ObFqOJVXA5LICfH6AAAK HTTP/1.1" 200 -
+2026-01-22 09:03:28,823 - INFO - 127.0.0.1 - - [22/Jan/2026 09:03:28] "GET /download?job=14000-202601220900-FlZWcHwtuc4 HTTP/1.1" 200 -
+2026-01-22 09:04:09,430 - INFO - 127.0.0.1 - - [22/Jan/2026 09:04:09] "GET /socket.io/?EIO=4&transport=polling&t=PlZn4KE HTTP/1.1" 200 -
+2026-01-22 09:04:09,749 - INFO - 127.0.0.1 - - [22/Jan/2026 09:04:09] "POST /socket.io/?EIO=4&transport=polling&t=PlZn4KP&sid=DkeckuKauSr0vgfvAAAM HTTP/1.1" 200 -
+2026-01-22 09:04:09,753 - INFO - 127.0.0.1 - - [22/Jan/2026 09:04:09] "GET /socket.io/?EIO=4&transport=polling&t=PlZn4KR&sid=DkeckuKauSr0vgfvAAAM HTTP/1.1" 200 -
+2026-01-22 09:04:44,700 - INFO - 127.0.0.1 - - [22/Jan/2026 09:04:44] "GET /socket.io/?EIO=4&transport=websocket&sid=DkeckuKauSr0vgfvAAAM HTTP/1.1" 200 -
+2026-01-22 09:04:44,713 - INFO - 127.0.0.1 - - [22/Jan/2026 09:04:44] "GET /llm HTTP/1.1" 200 -
+2026-01-22 09:05:22,768 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:22] "[32mPOST /llm HTTP/1.1[0m" 302 -
+2026-01-22 09:05:23,019 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:23] "GET /llm_results HTTP/1.1" 200 -
+2026-01-22 09:05:23,390 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:23] "GET /socket.io/?EIO=4&transport=polling&t=PlZnMIw HTTP/1.1" 200 -
+2026-01-22 09:05:23,646 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:23] "POST /socket.io/?EIO=4&transport=polling&t=PlZnMO1&sid=EiLmkRiyVCXBPJjaAAAO HTTP/1.1" 200 -
+2026-01-22 09:05:23,709 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:23] "GET /socket.io/?EIO=4&transport=polling&t=PlZnMO3&sid=EiLmkRiyVCXBPJjaAAAO HTTP/1.1" 200 -
+2026-01-22 09:05:23,717 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:23] "GET /socket.io/?EIO=4&transport=polling&t=PlZnMT3&sid=EiLmkRiyVCXBPJjaAAAO HTTP/1.1" 200 -
+2026-01-22 09:05:27,934 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-01-22 09:05:29,996 - DEBUG - http://localhost:2929 "GET /health HTTP/1.1" 200 15
+2026-01-22 09:05:30,003 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-01-22 09:05:32,037 - DEBUG - http://localhost:2929 "POST /tokenize HTTP/1.1" 200 3144
+2026-01-22 09:05:32,040 - DEBUG - Starting new HTTP connection (1): localhost:2929
+2026-01-22 09:05:42,216 - DEBUG - http://localhost:2929 "POST /completion HTTP/1.1" 200 6448
+2026-01-22 09:05:47,398 - INFO - 127.0.0.1 - - [22/Jan/2026 09:05:47] "GET /llm_download?job=TinyLlama-1.1B_202601220905_aLAUmY17Am4 HTTP/1.1" 200 -
+2026-01-22 09:06:28,481 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:28] "GET /reportredaction HTTP/1.1" 200 -
+2026-01-22 09:06:28,507 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:28] "GET /socket.io/?EIO=4&transport=websocket&sid=EiLmkRiyVCXBPJjaAAAO HTTP/1.1" 200 -
+2026-01-22 09:06:28,513 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:28] "GET /socket.io/?EIO=4&transport=polling&t=PlZncHT HTTP/1.1" 200 -
+2026-01-22 09:06:28,838 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:28] "POST /socket.io/?EIO=4&transport=polling&t=PlZncHe&sid=z3YOxyzXwP7OZ750AAAQ HTTP/1.1" 200 -
+2026-01-22 09:06:28,846 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:28] "GET /socket.io/?EIO=4&transport=polling&t=PlZncHg&sid=z3YOxyzXwP7OZ750AAAQ HTTP/1.1" 200 -
+2026-01-22 09:06:49,534 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:49] "GET /socket.io/?EIO=4&transport=websocket&sid=z3YOxyzXwP7OZ750AAAQ HTTP/1.1" 200 -
+2026-01-22 09:06:49,874 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:49] "[32mPOST /reportredaction HTTP/1.1[0m" 302 -
+2026-01-22 09:06:49,883 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:49] "GET /reportredaction HTTP/1.1" 200 -
+2026-01-22 09:06:50,108 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:50] "GET /socket.io/?EIO=4&transport=polling&t=PlZnhVk HTTP/1.1" 200 -
+2026-01-22 09:06:50,430 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:50] "POST /socket.io/?EIO=4&transport=polling&t=PlZnhZ1&sid=Dn9jB18XkYsqzmpbAAAS HTTP/1.1" 200 -
+2026-01-22 09:06:50,435 - INFO - 127.0.0.1 - - [22/Jan/2026 09:06:50] "GET /socket.io/?EIO=4&transport=polling&t=PlZnhZ3&sid=Dn9jB18XkYsqzmpbAAAS HTTP/1.1" 200 -
+2026-01-22 09:09:16,375 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:16] "GET /socket.io/?EIO=4&transport=websocket&sid=Dn9jB18XkYsqzmpbAAAS HTTP/1.1" 200 -
+2026-01-22 09:09:16,775 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:16] "[32mPOST /reportredaction HTTP/1.1[0m" 302 -
+2026-01-22 09:09:17,129 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:17] "GET /reportredactionviewer/test_medical_report.pdf$3c014714-520f-4fd3-9f16-8bb2c8f93307 HTTP/1.1" 200 -
+2026-01-22 09:09:17,176 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:17] "GET /reportredactionfileredacted/test_medical_report.pdf$3c014714-520f-4fd3-9f16-8bb2c8f93307 HTTP/1.1" 200 -
+2026-01-22 09:09:17,484 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:17] "GET /socket.io/?EIO=4&transport=polling&t=PlZoFST HTTP/1.1" 200 -
+2026-01-22 09:09:17,812 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:17] "POST /socket.io/?EIO=4&transport=polling&t=PlZoFXz&sid=lSXyNe5cl8vhJ-pLAAAU HTTP/1.1" 200 -
+2026-01-22 09:09:17,819 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:17] "GET /socket.io/?EIO=4&transport=polling&t=PlZoFY1&sid=lSXyNe5cl8vhJ-pLAAAU HTTP/1.1" 200 -
+2026-01-22 09:09:26,994 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:26] "GET /privacy-dashboard HTTP/1.1" 200 -
+2026-01-22 09:09:27,014 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:27] "GET /socket.io/?EIO=4&transport=websocket&sid=lSXyNe5cl8vhJ-pLAAAU HTTP/1.1" 200 -
+2026-01-22 09:09:47,140 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:47] "GET / HTTP/1.1" 200 -
+2026-01-22 09:09:47,450 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:47] "GET /socket.io/?EIO=4&transport=polling&t=PlZoMnO HTTP/1.1" 200 -
+2026-01-22 09:09:47,769 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:47] "POST /socket.io/?EIO=4&transport=polling&t=PlZoMr-&sid=gme-6DaL-upMcXqzAAAW HTTP/1.1" 200 -
+2026-01-22 09:09:47,771 - INFO - 127.0.0.1 - - [22/Jan/2026 09:09:47] "GET /socket.io/?EIO=4&transport=polling&t=PlZoMs1&sid=gme-6DaL-upMcXqzAAAW HTTP/1.1" 200 -

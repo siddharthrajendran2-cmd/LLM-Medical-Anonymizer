@@ -1,0 +1,468 @@
+2026-01-23 08:11:42,808 - DEBUG - Start LLM Anonymizer
+2026-01-23 08:11:42,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-01-23 08:11:42,833 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-23 08:11:49,536 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:49,581 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:49] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:50,433 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:50,444 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:50] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:51,202 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:51,210 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:51] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:51,517 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:51,526 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:51] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:51,703 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:51,711 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:51] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:52,024 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:52,033 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:52] "[35m[1mGET /llm HTTP/1.1[0m" 500 -
+2026-01-23 08:11:53,130 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:53] "GET / HTTP/1.1" 200 -
+2026-01-23 08:11:53,403 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:53] "GET /socket.io/?EIO=4&transport=polling&t=PlekiOK HTTP/1.1" 200 -
+2026-01-23 08:11:53,732 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:53] "POST /socket.io/?EIO=4&transport=polling&t=PlekiS2&sid=XjbXQCYaJaVcMMdAAAAA HTTP/1.1" 200 -
+2026-01-23 08:11:53,732 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:53] "GET /socket.io/?EIO=4&transport=polling&t=PlekiS5&sid=XjbXQCYaJaVcMMdAAAAA HTTP/1.1" 200 -
+2026-01-23 08:11:54,782 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:54] "GET /socket.io/?EIO=4&transport=websocket&sid=XjbXQCYaJaVcMMdAAAAA HTTP/1.1" 200 -
+2026-01-23 08:11:54,823 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:54] "GET /llm_results HTTP/1.1" 200 -
+2026-01-23 08:11:55,107 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:55] "GET /socket.io/?EIO=4&transport=polling&t=PlekioV HTTP/1.1" 200 -
+2026-01-23 08:11:55,427 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:55] "POST /socket.io/?EIO=4&transport=polling&t=Plekisg&sid=Iaznr5pcPZqBw2raAAAC HTTP/1.1" 200 -
+2026-01-23 08:11:55,435 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:55] "GET /socket.io/?EIO=4&transport=polling&t=Plekisj&sid=Iaznr5pcPZqBw2raAAAC HTTP/1.1" 200 -
+2026-01-23 08:11:56,063 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:56] "GET /reportredaction HTTP/1.1" 200 -
+2026-01-23 08:11:56,077 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:56] "GET /socket.io/?EIO=4&transport=websocket&sid=Iaznr5pcPZqBw2raAAAC HTTP/1.1" 200 -
+2026-01-23 08:11:56,337 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:56] "GET /socket.io/?EIO=4&transport=polling&t=Plekj5t HTTP/1.1" 200 -
+2026-01-23 08:11:56,661 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:56] "POST /socket.io/?EIO=4&transport=polling&t=Plekj9r&sid=zi0JG0kOwI6XmfS5AAAE HTTP/1.1" 200 -
+2026-01-23 08:11:56,667 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:56] "GET /socket.io/?EIO=4&transport=polling&t=Plekj9v&sid=zi0JG0kOwI6XmfS5AAAE HTTP/1.1" 200 -
+2026-01-23 08:11:57,040 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:57] "GET /socket.io/?EIO=4&transport=websocket&sid=zi0JG0kOwI6XmfS5AAAE HTTP/1.1" 200 -
+2026-01-23 08:11:57,067 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:57] "GET /privacy-dashboard HTTP/1.1" 200 -
+2026-01-23 08:11:59,589 - ERROR - Exception on /llm [GET]
+Traceback (most recent call last):
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\routes.py", line 383, in main
+    form = LLMPipelineForm(
+        current_app.config['CONFIG_FILE'], current_app.config['MODEL_PATH'])
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\wtforms\form.py", line 209, in __call__
+    return type.__call__(cls, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\webapp\llm_processing\forms.py", line 93, in __init__
+    config_data = yaml.safe_load(file)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 111, in compose_sequence_node
+    node.value.append(self.compose_node(node, index))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 115, in check_token
+    while self.need_more_tokens():
+          ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 152, in need_more_tokens
+    self.stale_possible_simple_keys()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\LLMAnonymizer-Publication\venv\Lib\site-packages\yaml\scanner.py", line 291, in stale_possible_simple_keys
+    raise ScannerError("while scanning a simple key", key.mark,
+            "could not find expected ':'", self.get_mark())
+yaml.scanner.ScannerError: while scanning a simple key
+  in "config.yml", line 6, column 1
+could not find expected ':'
+  in "config.yml", line 11, column 1
+2026-01-23 08:11:59,606 - INFO - 127.0.0.1 - - [23/Jan/2026 08:11:59] "[35m[1mGET /llm HTTP/1.1[0m" 500 -

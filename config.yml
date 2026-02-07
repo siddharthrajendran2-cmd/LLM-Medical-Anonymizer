@@ -1,10 +1,5 @@
 models:
-  - name: "LLaMA 3 8B Instruct Q5_K_M"
-    path_to_gguf: "Meta-Llama-3-8B-Instruct-Q5_K_M.gguf"
-    context_size: 8196
-  - name: "LLaMA 3 70B Instruct Q5_K_M"
-    path_to_gguf: "Meta-Llama-3-70B-Instruct.Q5_K_M.gguf"
-    context_size: 8196
-  - name: "Phi 3 mini 4k instruct fp16"
-    path_to_gguf: "Phi-3-mini-4k-instruct-fp16.gguf"
-    context_size: 8196
+  - name: "TinyLlama-1.1B"
+    path_to_gguf: "C:\\models\\tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+    context_size: 2048
+

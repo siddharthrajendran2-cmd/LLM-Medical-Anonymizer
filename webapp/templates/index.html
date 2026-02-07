@@ -1,6 +1,69 @@
 {% extends "layout.html" %}
 {% block content %}
-
+<style>
+    /* Override gradient background for content areas */
+    .container {
+        background: transparent;
+    }
+    
+    /* All cards and content boxes white with dark text */
+    .card, .content-card, .upload-area, .form-area {
+        background: white !important;
+        color: #333 !important;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    /* All text elements readable */
+    .card *, .content-card *, .upload-area *, .form-area *,
+    p, span, div, label, h1, h2, h3, h4, h5, h6 {
+        color: #333 !important;
+    }
+    
+    /* Form inputs */
+    input, select, textarea, .form-control, .form-select {
+        background: white !important;
+        color: #333 !important;
+        border: 2px solid #e9ecef !important;
+    }
+    
+    /* Progress bars */
+    .progress {
+        background: #e9ecef !important;
+        height: 30px;
+        border-radius: 12px;
+        margin: 15px 0;
+    }
+    
+    .progress-bar {
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+        color: white !important;
+        font-weight: bold;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    
+    /* Job status sections */
+    .job-status, .status-message, .processing-info {
+        background: white !important;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 15px 0;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Alerts */
+    .alert {
+        color: white !important;
+        font-weight: 600;
+    }
+    
+    .alert * {
+        color: white !important;
+    }
+</style>
 <div class="content-section">
     <h1>Upload your Documents!</h1>
 
